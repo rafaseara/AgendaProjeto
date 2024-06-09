@@ -30,13 +30,13 @@ public class AgendaConsultorio {
             sexo = scanner.nextLine();
         } while (!sexo.equals("f") && !sexo.equals("m"));
 
-        System.out.print("Digite seu RG ou CPF: (99.999.999-9/999.999.999-99)");
+        System.out.print("Digite seu RG ou CPF (99.999.999-9/999.999.999-99): ");
         String documento = scanner.nextLine();
 
-        System.out.print("Digite algum telefone: ((11) XXXX-XXXX)");
+        System.out.print("Digite algum telefone: ((11) XXXX-XXXX): ");
         String telefone = scanner.nextLine();
 
-        System.out.print("Digite algum contato de emergência caso necessário: ((11) XXXX-XXXX)");
+        System.out.print("Digite algum contato de emergência caso necessário: ((11) XXXX-XXXX): ");
         String contatoEmergencia = scanner.nextLine();
         
         
@@ -182,6 +182,7 @@ public class AgendaConsultorio {
             return;
         }
         
+        System.out.println();
         System.out.println("\u001B[1mAS CONSULTAS DEMORAM EM MÉDIA UMA HORA\u001B[0m");
         System.out.println();
         System.out.println("Lista de Médicos:");

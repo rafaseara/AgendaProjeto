@@ -1,18 +1,19 @@
 package consultas;
 
 public class Paciente extends Pessoa {
-    private int contatoEmergencia;
+    private String contatoEmergencia;
     private String alergiaMedicamentos;
     private int numeroConsultas;
-
-    public Paciente(String nomeCompleto, String dataNascimento, String sexo, int documento, int telefone, int contatoEmergencia, String alergiaMedicamentos) {
-        super(nomeCompleto, dataNascimento, sexo, documento, telefone);
-        this.contatoEmergencia = contatoEmergencia;
-        this.alergiaMedicamentos = alergiaMedicamentos;
-        this.numeroConsultas = 0;
-    }
     
-    public int getNumeroConsultas() {
+    public Paciente(String nomeCompleto, String dataNascimento, String sexo, String documento, String telefone,
+            String contatoEmergencia, String alergiaMedicamentos) {
+    	super(nomeCompleto, dataNascimento, sexo, documento, telefone);
+    	this.contatoEmergencia = contatoEmergencia;
+    	this.alergiaMedicamentos = alergiaMedicamentos;
+    	this.numeroConsultas = 0; // Inicialmente, o número de consultas é zero
+    }
+
+	public int getNumeroConsultas() {
 		return numeroConsultas;
 	}
 
@@ -20,7 +21,7 @@ public class Paciente extends Pessoa {
 		this.numeroConsultas = numeroConsultas;
 	}
 
-	public void setContatoEmergencia(int contatoEmergencia) {
+	public void setContatoEmergencia(String contatoEmergencia) {
 		this.contatoEmergencia = contatoEmergencia;
 	}
 
@@ -28,7 +29,7 @@ public class Paciente extends Pessoa {
 		this.alergiaMedicamentos = alergiaMedicamentos;
 	}
 
-	public int getContatoEmergencia() {
+	public String getContatoEmergencia() {
         return contatoEmergencia;
     }
 

@@ -4,10 +4,10 @@ public class Pessoa {
     protected String nomeCompleto;
     protected String dataNascimento;
     protected String sexo;
-    protected int documento;
-    protected int telefone;
+    protected String documento;
+    protected String telefone;
 
-    public Pessoa(String nomeCompleto, String dataNascimento, String sexo, int documento, int telefone) {
+    public Pessoa(String nomeCompleto, String dataNascimento, String sexo, String documento, String telefone) {
         this.nomeCompleto = nomeCompleto;
         this.dataNascimento = dataNascimento;
         this.sexo = sexo;
@@ -39,19 +39,19 @@ public class Pessoa {
 		this.sexo = sexo;
 	}
 
-	public int getDocumento() {
+	public String getDocumento() {
 		return documento;
 	}
 
-	public void setDocumento(int documento) {
+	public void setDocumento(String documento) {
 		this.documento = documento;
 	}
 
-	public int getTelefone() {
+	public String getTelefone() {
 		return telefone;
 	}
 
-	public void setTelefone(int telefone) {
+	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
     
